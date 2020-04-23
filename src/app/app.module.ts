@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { CreategameComponent } from './Components/creategame/creategame.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CreategameComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
