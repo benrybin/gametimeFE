@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "GameTime"
+    }
+  },
+  "defaultProject": "GameTime",
+  "cli": {
+    "analytics": "75bdcded-39da-4137-ada4-79ba575e73a9"
+  }
 }
