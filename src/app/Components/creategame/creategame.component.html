@@ -1,1 +1,23 @@
-<p>creategame works!</p>
+<div class="card-body" align="center">
+
+    <form class="form-horizontal" style="align-content: center">
+      <fieldset>
+        <legend>Add New Game</legend>
+        <div class="form-group">
+          <div class="col-md-5">
+            <input id="title" name="title" type="text" [(ngModel)]="newgame.title" placeholder="Enter Title"
+                   class="form-control" required #title="ngModel">
+    
+            <input id="description" name="description" type="text" placeholder="Enter Description"
+                   [(ngModel)]="newgame.description" class="form-control" required #description="ngModel">
+    
+            <input id="banner" name="banner" type="text" placeholder="Link" [(ngModel)]="newgame.banner"
+                   class="form-control" #banner="ngModel" required>
+    
+          </div>
+          <button type="submit" class="btn btn-info" (click)="onSubmit()">Submit</button>
+    
+        </div>
+      </fieldset>
+    </form>
+    </div>
